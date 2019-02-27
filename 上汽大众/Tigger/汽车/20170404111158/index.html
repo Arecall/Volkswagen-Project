@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>jQuery图片左右滑动幻灯片轮播图焦点图插件 - 代码库</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.SuperSlide2.js"></script>
+</head>
+<body style="background-color: #EBF1F2">
+<div class="friend">
+    <div class="mr_frbox">
+        <img class="mr_frBtnL prev" src="../images/mfrl.gif">
+        <div class="mr_frUl" style="padding-left:150px">
+            <ul id="mr_fu">
+
+                <li style="margin-left:15px">
+                    <div>
+                        <div style="width:300px;height:20px;background-color: #637A90"><p style="margin-left: 10px;font-size: 14px;color: white">报名截止</p></div>
+                        <a href="javascript:;"><img src="images/2.jpg"></a>
+                        <p style="font-size: 21px;font-weight: bold;margin-top: 30px;color: #1D1F20">敞开芯扉</p>
+                        <p style="font-size: 11px;margin-top: 6px;font-weight: 400;color: #1D1F20;">畅享沁爽一夏</p>
+                        <a href="#" style="text-decoration: none;">
+                            <div style="width:300px;height:40px;margin-top:25px;line-height:40px;text-align: center;font-size:18px;color: white;background-color: #BDC3C6;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;">
+                                我要参与
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li style="margin-left:15px;height: 800px">
+                    <div>
+                        <div style="width:300px;height:20px;background-color: #FD961D"><p style="margin-left: 10px;font-size: 14px;color: white">报名中</p></div>
+                        <a href="javascript:;"><img src="images/1.jpg"></a>
+                        <p style="font-size: 21px;font-weight: bold;margin-top: 30px;color: #1D1F20">车友会火热证集中</p>
+                        <p style="font-size: 11px;margin-top: 6px;font-weight: 400;color: #1D1F20;">入住既有精美礼品相赠送</p>
+                        <a href="#" style="text-decoration: none;">
+                            <div style="width:300px;height:40px;margin-top:25px;line-height:40px;text-align: center;font-size:18px;color: white;background-color: #0068AA;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;">
+                                我要参与
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li style="margin-left:15px">
+                    <div>
+                        <div style="width:300px;height:20px;background-color: #637A90"><p style="margin-left: 10px;font-size: 14px;color: white">报名截止</p></div>
+                        <a href="javascript:;"><img src="images/3.jpg"></a>
+                        <p style="font-size: 21px;font-weight: bold;margin-top: 30px;color: #1D1F20">梦享安驾营第五季</p>
+                        <p style="font-size: 11px;margin-top: 6px;font-weight: 400;color: #1D1F20;">火热报名中</p>
+                        <a href="#" style="text-decoration: none;">
+                            <div style="width:300px;height:40px;margin-top:25px;line-height:40px;text-align: center;font-size:18px;color: white;background-color: #BDC3C6;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;">
+                                我要参与
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li style="margin-left:15px">
+                    <div>
+                        <div style="width:300px;height:20px;background-color: #637A90"><p style="margin-left: 10px;font-size: 14px;color: white">报名截止</p></div>
+                        <a href="javascript:;"><img src="images/4.jpg"style="height:170px"></a>
+                        <p style="font-size: 21px;font-weight: bold;margin-top: 30px;color: #1D1F20">梦享车手第6季</p>
+                        <p style="font-size: 11px;margin-top: 6px;font-weight: 400;color: #1D1F20;">火热报名中</p>
+                        <a href="#" style="text-decoration: none;">
+                            <div style="width:300px;height:40px;margin-top:25px;line-height:40px;text-align: center;font-size:18px;color: white;background-color: #BDC3C6;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;">
+                                我要参与
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <img class="mr_frBtnR next" src="../images/mfrr.gif" />
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    /* 图片滚动效果 */
+    $(".mr_frbox").slide({
+        titCell: "",
+        mainCell: ".mr_frUl ul",
+        autoPage: true,
+        effect: "leftLoop",
+        autoPlay: true,
+        vis: 3
+    });
+});
+</script>
+
+</body>
+</html>
